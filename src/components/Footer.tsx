@@ -1,7 +1,7 @@
 import logo from "@/assets/logo.png";
 
-const Footer = () => (
-  <footer className="bg-primary text-primary-foreground py-12 px-4">
+const Footer = () =>
+<footer className="bg-primary text-primary-foreground py-12 px-4">
     <div className="container mx-auto max-w-7xl grid md:grid-cols-3 gap-8">
       {/* Brand */}
       <div>
@@ -15,11 +15,11 @@ const Footer = () => (
       <div>
         <h4 className="font-semibold mb-3">Quick Links</h4>
         <nav className="space-y-2 text-sm opacity-80">
-          {["Home", "Plans", "Coverage", "About", "Contact"].map((l) => (
-            <a key={l} href={`#${l.toLowerCase()}`} className="block hover:opacity-100 transition-opacity">
+          {["Home", "Plans", "Coverage", "About", "Contact"].map((l) =>
+        <a key={l} href={`#${l.toLowerCase()}`} className="block hover:opacity-100 transition-opacity">
               {l}
             </a>
-          ))}
+        )}
         </nav>
       </div>
 
@@ -36,11 +36,11 @@ const Footer = () => (
 
     <div className="container mx-auto max-w-7xl mt-8 pt-6 border-t border-primary-foreground/20 text-center text-sm opacity-70">
       © 2026 Shachwal Net. All Rights Reserved. Designed by{" "}
-      <a href="https://furiglobal.in" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-100 transition-opacity">
+      <a href="https://furiglobal.in" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-100 transition-opacity text-accent">
         Furi Global
       </a>
     </div>
-  </footer>
-);
+  </footer>;
+
 
 export default Footer;
